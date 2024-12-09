@@ -20,7 +20,7 @@ router.post("/submit", async (req, res) => {
   }
 });
 
-router.get("/form/data", async (req, res) => {
+router.get("/data", async (req, res) => {
   try {
     const data = await db("FormData").select("*");
     res.status(200).json(data);
