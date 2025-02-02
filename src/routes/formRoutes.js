@@ -26,7 +26,7 @@ router.get("/data", async (req, res) => {
     res.status(200).json(data);
   } catch (error) {
     console.error("Erro ao buscar dados:", error);
-    res.status(500).json({ error: "Erro ao buscar dados" });
+    res.status(500).json({ error: "Erro ao buscar dados." });
   }
 });
 
